@@ -1,4 +1,4 @@
-This workflow lets you rename multiple files at once using Alfred.
+This workflow lets you rename multiple files at once using the realy realy great [Alfred App](https://www.alfredapp.com) on OS X.
 For this purpose, it provides a file action. After choosing files you are guided through three phases:
 
 # Step by Step
