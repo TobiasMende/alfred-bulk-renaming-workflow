@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>de.tobias-men.bulk-file-rename</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>13FB348A-C5DB-48BC-902B-836383F53B2A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C44B6462-3927-4EF1-B990-46108FD7D37B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>346B7820-8DE3-4412-9F9D-E2DED5B7DA69</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5562FABA-F98C-412B-85F3-A4FA96502CE4</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5562FABA-F98C-412B-85F3-A4FA96502CE4</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5FA1AE52-CE50-4147-ACF4-97B85DEF5743</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C69E127A-74BB-42A5-A81D-3B8E817C6466</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>9196F7A9-68E9-4B23-9E07-FCF1FDCBBEDD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>346B7820-8DE3-4412-9F9D-E2DED5B7DA69</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C32A8911-5E64-450A-817F-03F84FBC14DD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5FA1AE52-CE50-4147-ACF4-97B85DEF5743</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C44B6462-3927-4EF1-B990-46108FD7D37B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>C32A8911-5E64-450A-817F-03F84FBC14DD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>C69E127A-74BB-42A5-A81D-3B8E817C6466</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9196F7A9-68E9-4B23-9E07-FCF1FDCBBEDD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D669C9AC-8B24-4218-A803-A1DC114B88D9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>13FB348A-C5DB-48BC-902B-836383F53B2A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Tobias Mende</string>
+	<key>description</key>
+	<string>Bulk File Renaming allows you to rename multiple files at once using regular expressions</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Bulk File Renaming</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<true/>
+				<key>filetypes</key>
+				<array/>
+				<key>name</key>
+				<string>Rename files</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>D669C9AC-8B24-4218-A803-A1DC114B88D9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>files</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>13FB348A-C5DB-48BC-902B-836383F53B2A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import sys
+import json
+
+def make_item(title, pattern):
+  item = {}
+  item['valid'] = True
+  item['title'] = title
+  item['subtitle'] = pattern
+  item['arg'] = pattern
+  item['autocomplete'] = pattern
+  return item
+
+items = []
+
+items.append(make_item('Enter or choose a pattern to match the input files', '{query}'))
+items.append(make_item('Match Everything Before a -', '(.*)-.*'))
+
+
+output = {}
+output['items'] = items
+
+sys.stdout.write(json.dumps(output))</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Enter Match Pattern</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>C44B6462-3927-4EF1-B990-46108FD7D37B</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>match_pattern</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C32A8911-5E64-450A-817F-03F84FBC14DD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import sys
+import json
+
+def make_item(title, pattern):
+  item = {}
+  item['valid'] = True
+  item['title'] = title
+  item['subtitle'] = pattern
+  item['arg'] = pattern
+  item['autocomplete'] = pattern
+  return item
+
+items = []
+
+items.append(make_item('Enter or choose a pattern to replace the names with', '{query}'))
+items.append(make_item('Append a serial number', '$0-{n}'))
+items.append(make_item('Prepend current date', '{d} $0'))
+items.append(make_item('Switch two matches', '$2$1'))
+
+output = {}
+output['items'] = items
+
+sys.stdout.write(json.dumps(output))</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Enter Replace Pattern</string>
+				<key>type</key>
+				<integer>3</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5FA1AE52-CE50-4147-ACF4-97B85DEF5743</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>replace_pattern</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>C69E127A-74BB-42A5-A81D-3B8E817C6466</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Bulk File Rename</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>import sys
+import os
+import json
+
+argument = os.environ['mapping']
+translations = json.loads(argument) 
+
+def make_item(orig, renamed):
+  item = {}
+  item['valid'] = False
+  item['title'] = os.path.basename(orig)
+  item['subtitle'] = os.path.basename(renamed)
+
+  icon = {}
+  icon['type'] = 'fileicon'
+  icon['path'] = orig
+  item['icon'] = icon
+
+  alt = {}
+  alt['title'] = orig
+  alt['subtitle'] = renamed
+  item['mods'] = {'alt' : alt}
+  return item
+
+default = {}
+default['valid'] = True
+default['title'] = 'Press Enter to perform the following replacements'
+default['subtitle'] = 'Press ESC to abort the renaming process'
+
+items = map(lambda pair: make_item(pair[0], pair[1]), translations)
+items = [default] + items
+
+output = {}
+output['items'] = items
+
+output_json = json.dumps(output)
+
+sys.stdout.write(output_json)
+</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>confirm_replacements.py</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Confirm Replacement</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>5562FABA-F98C-412B-85F3-A4FA96502CE4</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import re
+import os
+import json
+import datetime
+
+files = os.environ['files'].split('\t')
+match_pattern = os.environ['match_pattern']
+replace_pattern = os.environ['replace_pattern']
+date = datetime.datetime.now().strftime('%Y-%m-%d')
+
+match_regex = re.compile(match_pattern)
+serial_number = 1
+
+translations = []
+
+for file in files:
+  root, ext = os.path.splitext(file)
+  path = os.path.dirname(root)
+  base = os.path.basename(root)
+
+  new_name = replace_pattern.replace('{n}', str(serial_number))
+  new_name = new_name.replace('{d}', str(date))
+  new_name = new_name.replace('$0', base)
+  serial_number += 1
+
+  matches = match_regex.match(base)
+  if matches != None:
+    groups = matches.groups()
+    var_count = 1
+    for group in groups:
+      new_name = new_name.replace('${}'.format(var_count), group)
+
+  new_name += ext
+  new_path = os.path.join(path, new_name)
+
+  translations.append((file, new_path))
+
+argument = json.dumps(translations)
+
+sys.stdout.write(argument)</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>build_mapping</string>
+				<key>type</key>
+				<integer>8</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9196F7A9-68E9-4B23-9E07-FCF1FDCBBEDD</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import re
+import os
+import json
+
+mapping = json.loads(os.environ['mapping'])
+
+try:
+  for pair in mapping:
+    os.rename(pair[0], pair[1])
+  sys.stdout.write('File Rename Finished')
+except:
+  sys.stdout.write('Failed to rename files')</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>3</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>mapping</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>346B7820-8DE3-4412-9F9D-E2DED5B7DA69</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>13FB348A-C5DB-48BC-902B-836383F53B2A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>200</integer>
+			<key>ypos</key>
+			<integer>80</integer>
+		</dict>
+		<key>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</key>
+		<dict>
+			<key>xpos</key>
+			<integer>580</integer>
+			<key>ypos</key>
+			<integer>650</integer>
+		</dict>
+		<key>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>770</integer>
+			<key>ypos</key>
+			<integer>650</integer>
+		</dict>
+		<key>346B7820-8DE3-4412-9F9D-E2DED5B7DA69</key>
+		<dict>
+			<key>xpos</key>
+			<integer>260</integer>
+			<key>ypos</key>
+			<integer>680</integer>
+		</dict>
+		<key>5562FABA-F98C-412B-85F3-A4FA96502CE4</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>650</integer>
+		</dict>
+		<key>5FA1AE52-CE50-4147-ACF4-97B85DEF5743</key>
+		<dict>
+			<key>xpos</key>
+			<integer>80</integer>
+			<key>ypos</key>
+			<integer>440</integer>
+		</dict>
+		<key>9196F7A9-68E9-4B23-9E07-FCF1FDCBBEDD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>650</integer>
+		</dict>
+		<key>C32A8911-5E64-450A-817F-03F84FBC14DD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>C44B6462-3927-4EF1-B990-46108FD7D37B</key>
+		<dict>
+			<key>xpos</key>
+			<integer>60</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>C69E127A-74BB-42A5-A81D-3B8E817C6466</key>
+		<dict>
+			<key>xpos</key>
+			<integer>320</integer>
+			<key>ypos</key>
+			<integer>470</integer>
+		</dict>
+		<key>D669C9AC-8B24-4218-A803-A1DC114B88D9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>50</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.1</string>
+	<key>webaddress</key>
+	<string>http://tobias-men.de</string>
+</dict>
+</plist>
