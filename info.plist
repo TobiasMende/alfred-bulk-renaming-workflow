@@ -348,23 +348,37 @@ sys.stdout.write(json.dumps(output))</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>lastpathcomponent</key>
+				<key>concurrently</key>
 				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<false/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>Bulk File Rename</string>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>import sys
+import re
+import os
+import json
+
+mapping = json.loads(os.environ['mapping'])
+
+try:
+  for pair in mapping:
+    os.rename(pair[0], pair[1])
+  sys.stdout.write('File Rename Finished')
+except:
+  sys.stdout.write('Failed to rename files')</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>bulk_renamy.py</string>
+				<key>type</key>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</string>
+			<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -448,6 +462,27 @@ sys.stdout.write(output_json)
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Bulk File Rename</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -511,41 +546,6 @@ sys.stdout.write(argument)</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>import sys
-import re
-import os
-import json
-
-mapping = json.loads(os.environ['mapping'])
-
-try:
-  for pair in mapping:
-    os.rename(pair[0], pair[1])
-  sys.stdout.write('File Rename Finished')
-except:
-  sys.stdout.write('Failed to rename files')</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>bulk_renamy.py</string>
-				<key>type</key>
-				<integer>8</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>variables</key>
@@ -569,77 +569,77 @@ except:
 		<key>13FB348A-C5DB-48BC-902B-836383F53B2A</key>
 		<dict>
 			<key>xpos</key>
-			<integer>200</integer>
+			<integer>310</integer>
 			<key>ypos</key>
 			<integer>80</integer>
 		</dict>
 		<key>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</key>
 		<dict>
 			<key>xpos</key>
-			<integer>580</integer>
+			<integer>650</integer>
 			<key>ypos</key>
 			<integer>650</integer>
 		</dict>
 		<key>2BA00E8B-B93B-42D5-A1E5-CCC217026DD4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>770</integer>
+			<integer>840</integer>
 			<key>ypos</key>
 			<integer>650</integer>
 		</dict>
 		<key>346B7820-8DE3-4412-9F9D-E2DED5B7DA69</key>
 		<dict>
 			<key>xpos</key>
-			<integer>260</integer>
+			<integer>310</integer>
 			<key>ypos</key>
 			<integer>680</integer>
 		</dict>
 		<key>5562FABA-F98C-412B-85F3-A4FA96502CE4</key>
 		<dict>
 			<key>xpos</key>
-			<integer>390</integer>
+			<integer>460</integer>
 			<key>ypos</key>
 			<integer>650</integer>
 		</dict>
 		<key>5FA1AE52-CE50-4147-ACF4-97B85DEF5743</key>
 		<dict>
 			<key>xpos</key>
-			<integer>80</integer>
+			<integer>100</integer>
 			<key>ypos</key>
 			<integer>440</integer>
 		</dict>
 		<key>9196F7A9-68E9-4B23-9E07-FCF1FDCBBEDD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>100</integer>
 			<key>ypos</key>
 			<integer>650</integer>
 		</dict>
 		<key>C32A8911-5E64-450A-817F-03F84FBC14DD</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>310</integer>
 			<key>ypos</key>
 			<integer>270</integer>
 		</dict>
 		<key>C44B6462-3927-4EF1-B990-46108FD7D37B</key>
 		<dict>
 			<key>xpos</key>
-			<integer>60</integer>
+			<integer>100</integer>
 			<key>ypos</key>
 			<integer>240</integer>
 		</dict>
 		<key>C69E127A-74BB-42A5-A81D-3B8E817C6466</key>
 		<dict>
 			<key>xpos</key>
-			<integer>320</integer>
+			<integer>310</integer>
 			<key>ypos</key>
 			<integer>470</integer>
 		</dict>
 		<key>D669C9AC-8B24-4218-A803-A1DC114B88D9</key>
 		<dict>
 			<key>xpos</key>
-			<integer>50</integer>
+			<integer>100</integer>
 			<key>ypos</key>
 			<integer>50</integer>
 		</dict>
