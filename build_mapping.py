@@ -31,6 +31,10 @@ for file in files:
     var_count = 1
     for group in groups:
       new_name = new_name.replace('${}'.format(var_count), group)
+      var_count += 1
+
+    for var_count in range(var_count, 10):
+      new_name = new_name.replace('${}'.format(var_count), '')
 
   new_name += ext
   new_path = os.path.join(path, new_name)
