@@ -30,6 +30,16 @@ class TestBuildMapping(unittest.TestCase):
         self.assert_single_name('', '', '{d}', date)
         self.assert_single_name('hello-world.txt', '', '$0-{d}', 'hello-world-{}.txt'.format(date))
 
+    def test_only_part_after_slash_is_used_as_pattern(self):
+        self.assert_single_name('a', '', '/$0', 'a')
+
+    def test_words_are_capitalized_with_capitalize_option(self):
+        self.assert_single_name('a', '', 'c/$0', 'A')
+        self.assert_single_name('a b c', '', 'c/$0', 'A B C')
+        self.assert_single_name('a-b-c', '', 'c/$0', 'A-B-C')
+        self.assert_single_name('a1-b-c', '', 'c/$0', 'A1-B-C')
+        self.assert_single_name('a-1_b_c', '', 'c/$0', 'A-1_B_C')
+
     def assert_single_name(self, input, match_pattern, replace_pattern, expected):
         self.assert_multiple_names([input], match_pattern, replace_pattern, [expected])
 

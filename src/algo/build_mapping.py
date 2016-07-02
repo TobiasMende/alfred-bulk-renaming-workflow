@@ -3,8 +3,26 @@ import os
 import re
 
 
+def extract_options(match_pattern_parts):
+    if len(match_pattern_parts) > 1:
+        return match_pattern_parts[0:-1]
+
+
+def apply_options(new_name, options):
+    if options is None:
+        return new_name
+    for option in options:
+        if option == 'c':
+            new_name = new_name.title()
+
+    return new_name
+
+
 def build_filename_translations(files, match_pattern, replace_pattern):
     date = datetime.datetime.now().strftime('%Y-%m-%d')
+    replace_pattern_parts = replace_pattern.split('/')
+    replace_pattern = replace_pattern_parts[-1]
+    options = extract_options(replace_pattern_parts)
     match_regex = re.compile(match_pattern)
     serial_number = 1
     translations = []
@@ -28,6 +46,8 @@ def build_filename_translations(files, match_pattern, replace_pattern):
 
             for var_count in range(var_count, 10):
                 new_name = new_name.replace('${}'.format(var_count), '')
+
+        new_name = apply_options(new_name, options)
 
         new_name += ext
         new_path = os.path.join(path, new_name)
