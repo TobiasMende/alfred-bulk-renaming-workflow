@@ -21,7 +21,6 @@ def build_filename_translations(files, match_pattern, replace_pattern):
         matches = match_regex.match(base)
         if matches is not None:
             groups = matches.groups()
-            re.su
             var_count = 1
             for group in groups:
                 new_name = new_name.replace('${}'.format(var_count), group)
