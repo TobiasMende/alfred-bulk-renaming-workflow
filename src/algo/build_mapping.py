@@ -12,8 +12,14 @@ def apply_options(new_name, options):
     if options is None:
         return new_name
     for option in options:
+        if len(option) == 0:
+            continue
         if option == 'c':
             new_name = new_name.title()
+        elif option[0] == 'r':
+            replace_part = option[2:-1]
+            replace_parts = replace_part.split(',')
+            new_name = new_name.replace(replace_parts[0], replace_parts[1])
 
     return new_name
 

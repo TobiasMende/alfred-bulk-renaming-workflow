@@ -40,6 +40,15 @@ class TestBuildMapping(unittest.TestCase):
         self.assert_single_name('a1-b-c', '', 'c/$0', 'A1-B-C')
         self.assert_single_name('a-1_b_c', '', 'c/$0', 'A-1_B_C')
 
+    def test_replace_option(self):
+        self.assert_single_name('a-', '', 'r(-,)/$0', 'a')
+        self.assert_single_name('a-b-c-d', '', 'r(-, )/$0', 'a b c d')
+        self.assert_single_name('a-b-', '', 'r(-,hi)/$0', 'ahibhi')
+
+    def test_acceptance(self):
+        self.assert_single_name('ab_b_c-1-2-3  .hi', '(.*?)-(.*)', 'r(_, )/r(-, )/c/$1 $2', 'Ab B C 1 2 3  .hi')
+        self.assert_single_name('ab_b_c-1-2-3  .hi', '(.*?)-(.*)', 'r(_, )/r(-, )/c/r(  ,)/$1 $2', 'Ab B C 1 2 3.hi')
+
     def assert_single_name(self, input, match_pattern, replace_pattern, expected):
         self.assert_multiple_names([input], match_pattern, replace_pattern, [expected])
 

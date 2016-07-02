@@ -3,7 +3,7 @@ import json
 import os
 import sys
 
-from src.algo.build_mapping import build_filename_translations
+from algo.build_mapping import build_filename_translations
 
 files = os.environ['files'].split('\t')
 match_pattern = os.environ['match_pattern']
