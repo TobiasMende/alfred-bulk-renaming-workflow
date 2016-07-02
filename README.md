@@ -11,9 +11,3 @@ For this purpose, it provides a file action. After choosing files you are guided
     * `{d}` contains the current date in the format 'YYYY-MM-DD'.
 3. After pressing enter again, Alfred shows you a list wich gives you a preview of how the renaming will look.
 4. Pressing enter again will rename all files according to your expressions.
-
-# Known Issues
-
-* Currently (Alfred 3.0.2) there is a bug in Alfred that prevents external script from getting arguments that are entered by the user.
-    Afaik, this will be fixed in Alfred 3.0.3 but disables the possibility to enter custom expressions.
-    Therefore, only predefined expressions can be used at the moment.
