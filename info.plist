@@ -395,7 +395,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>python src/bulk_renamy.py "{query}"</string>
+				<string>python src/bulk_rename.py "{query}"</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
