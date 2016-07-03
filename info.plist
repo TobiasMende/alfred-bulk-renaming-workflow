@@ -305,6 +305,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>python src/bulk_rename.py "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string>bulk_renamy.py</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>argumenttype</key>
@@ -390,29 +413,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>68</integer>
-				<key>script</key>
-				<string>python src/bulk_rename.py "{query}"</string>
-				<key>scriptargtype</key>
-				<integer>0</integer>
-				<key>scriptfile</key>
-				<string>bulk_renamy.py</string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>27DDCDB8-B87F-4813-9D3B-5EF89D70B2CE</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>variables</key>
@@ -430,7 +430,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>This workflow allows the user to rename multiple files at once using regular expressions and further options.</string>
 	<key>uidata</key>
 	<dict>
 		<key>13FB348A-C5DB-48BC-902B-836383F53B2A</key>
@@ -512,7 +512,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.1</string>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string>http://tobias-men.de</string>
 </dict>
